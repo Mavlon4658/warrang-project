@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__top">
+                <div class="container header__top_container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/header-top-icon-1.svg" alt="">
+                                <span>Москва и МО</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/header-top-icon-2.svg" alt="">
+                                <span>Написать в поддержку</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="auth_btn modal__open">
+                        <img src="./images/profile-icon.svg" alt="">
+                        <p>
+                            <a href="#">Вход</a>  /  <a href="#">Регистрация</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__body">
+                <div class="container header__body_container">
+                    <a href="/" class="header__logo">
+                        <img src="./images/logo.svg" alt="">
+                    </a>
+                    <ul class="header__navs">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Категории</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">О сервисе</a>
+                        </li>
+                        <li>
+                            <a href="#">Помощь</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn_brown">ПРОДАТЬ</a>
+                    <a href="#" class="btn_gray">
+                        <img src="./images/basket.svg" alt="">
+                        <span class="text">Корзина</span>
+                        <span class="number">5</span>
+                    </a>
+                </div>
+                <ul class="header__navs mb">
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Категории</a>
+                    </li>
+                    <li>
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#">О сервисе</a>
+                    </li>
+                    <li>
+                        <a href="#">Помощь</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Login modal -->
+        <section class="modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h3>ВХОД</h3>
+                <div class="inp_wrap">
+                    <input type="tel" placeholder="Телефон">
+                    <input type="password" placeholder="Пароль">
+                </div>
+                <div class="text">
+                    <p>Запомнить пароль</p>
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <button class="btn_yellow">Войти</button>
+                <h5>Нет аккаунта?</h5>
+                <button class="btn_yellow">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                <h4>Или авторизуйтесь через</h4>
+                <div class="links">
+                    <a href="#">
+                        <img src="./images/link-icon-1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/link-icon-2.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/link-icon-3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/link-icon-4.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Login modal end -->
+
+        <main>
+
+            <!-- Home -->
+            <section class="home products_home">
+                <div class="container">
+                    <div class="home__search">
+                        <input type="text" placeholder="Поиск по объявлениям">
+                        <button class="btn_dark">
+                            <span>НАЙТИ</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Home end -->
+
+            <!-- Advertisement -->
+            <section class="advertisement">
+                <div class="container">
+                    <h2 class="advertisement__title">ПОДАТЬ ОБЪЯВЛЕНИЕ</h2>
+                    <div class="name">
+                        <label for="">Введите название</label>
+                        <input type="text" value="Продам автомат G&G">
+                    </div>
+                    <div class="categories">
+                        <div class="categories_item">
+                            <h3>Категория</h3>
+                            <ul>
+                                <li>Вооружение и ММГ</li>
+                                <li>Одежда и обувь</li>
+                                <li>Патроны и лоадеры</li>
+                                <li>Фонари и рации</li>
+                                <li>Расходники</li>
+                            </ul>
+                        </div>
+                        <div class="categories_item">
+                            <h3>Производитель</h3>
+                            <ul>
+                                <li>РФ </li>
+                                <li>G&G </li>
+                                <li>East Crane </li>
+                                <li>Tokyo Marui </li>
+                                <li>НПО АЕГ </li>
+                                <li>E&L </li>
+                                <li>Добавить</li>
+                            </ul>
+                        </div>
+                        <div class="categories_item">
+                            <h3>Состояние</h3>
+                            <div class="checkboxes">
+                                <label for="">
+                                    <input type="checkbox">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                        </svg>
+                                    </span>
+                                    <span>Новое</span>
+                                </label>
+                                <label for="">
+                                    <input type="checkbox">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                        </svg>
+                                    </span>
+                                    <span>Отличное</span>
+                                </label>
+                                <label for="">
+                                    <input type="checkbox">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                        </svg>
+                                    </span>
+                                    <span>Хорошее</span>
+                                </label>
+                                <label for="">
+                                    <input type="checkbox">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                        </svg>
+                                    </span>
+                                    <span>Удовлетворительное</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="categories_item">
+                            <h3>Фотографии</h3>
+                            <div class="inp_file">
+                                <label for="">
+                                    <input type="file" name="" id="">
+                                    <img src="./images/file-icon.png" alt="">
+                                </label>
+                                <p>Загрузить</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="characteristics">
+                        <h3 class="title">
+                            Доп.характеристики
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.76562 0.854021L6.2773 9.21287L4.23742 9.2353L0.586175 0.954934L2.54606 0.933389L5.78963 8.51819L4.72969 8.52984L7.80574 0.875567L9.76562 0.854021Z" fill="black"/>
+                            </svg>
+                        </h3>
+                        <h4 class="title">Подробнее</h4>
+                        <p>Описание объявления</p>
+                        <textarea name="" id="">Не указывайте в описании телефон и e-mail — для этого есть отдельные поля</textarea>
+                        <div class="form_inp">
+                            <label for="">Цена</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <h3>Контакты</h3>
+                        <div class="form_inp">
+                            <label for="">Телефон</label>
+                            <input type="tel">
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                </div>
+                                <p>Связаться через ВК</p>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                </div>
+                                <p>Связаться через Telegram</p>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                </div>
+                                <p>Связаться через What’sAp</p>
+                            </li>
+                        </ul>
+                        <button>ПОДАТЬ ОБЪЯВЛЕНИЕ</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Advertisement end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <ul class="footer__navs">
+                        <li class="footer__navs_item">
+                            <h3>Меню компании</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">На главную</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Поддержать проект</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Юр.лицам</a>
+                                </li>
+                                <li>
+                                    <a href="#">Реклама</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__navs_item">
+                            <h3>Каталог</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Вооружение и ММГ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Одежда и обувь</a>
+                                </li>
+                                <li>
+                                    <a href="#">Расходные материалы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Рации и батареи</a>
+                                </li>
+                                <li>
+                                    <a href="#">Патроны</a>
+                                </li>
+                                <li>
+                                    <a href="#">Распродажа</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__navs_item">
+                            <h3>Помощь</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Часто задаваемые вопросы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Консультация Online</a>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата </a>
+                                </li>
+                                <li>
+                                    <a href="#">Доставка </a>
+                                </li>
+                                <li>
+                                    <a href="#">Возврат </a>
+                                </li>
+                                <li>
+                                    <a href="#">Забыл пароль</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="footer__right">
+                        <div class="msg">
+                            <img src="./images/msg-icon.svg" alt="">
+                            <div>
+                                <p>Консультация Online</p>
+                                <p>Задавайте вопросы</p>
+                            </div>
+                        </div>
+                        <div class="online">
+                            <span></span>
+                            <p>Сервис работает в <br> обычном режиме</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>Copyright © ООО “Варранг”. All rights reserved.</p>
+                    <div>
+                        <p>Принимаем к оплате</p>
+                        <div class="links">
+                            <a href="#">
+                                <img src="./images/bank-icon-1.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/bank-icon-2.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/bank-icon-3.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#">Оферта</a>
+                        <a href="#">Конфиденциальность</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

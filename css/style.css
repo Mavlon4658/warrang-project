@@ -1323,4 +1323,258 @@ body {
 .products .more-btn button, .products .more-btn a {
   font-size: 24px;
   font-weight: bold;
+}
+
+.advertisement {
+  padding-bottom: 151px;
+  font-family: "Montserrat", sans-serif;
+}
+.advertisement__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 77px;
+}
+@media screen and (max-width: 992px) {
+  .advertisement__title {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+}
+.advertisement .name {
+  max-width: 463px;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 992px) {
+  .advertisement .name {
+    margin-bottom: 50px;
+  }
+}
+.advertisement .name label {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.advertisement .name input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.27);
+  padding: 9px 19px 10px;
+  border-radius: 25px;
+  font-size: 12px;
+}
+.advertisement .categories {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 58px;
+}
+@media screen and (max-width: 992px) {
+  .advertisement .categories {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.advertisement .categories_item {
+  width: 225px;
+}
+.advertisement .categories h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.advertisement .categories ul {
+  font-size: 16px;
+  font-weight: 400;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.advertisement .categories .checkboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.advertisement .categories .checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+  font-size: 16px;
+}
+.advertisement .categories .checkboxes .icon {
+  width: 13px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+}
+.advertisement .categories .checkboxes .icon svg {
+  display: none;
+}
+.advertisement .categories .checkboxes input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.advertisement .categories .checkboxes input:checked ~ span svg {
+  display: block;
+}
+.advertisement .categories .inp_file {
+  width: 90px;
+}
+.advertisement .categories .inp_file label {
+  position: relative;
+  width: 90px;
+  height: 74px;
+  margin-bottom: 13px;
+}
+.advertisement .categories .inp_file label img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.advertisement .categories .inp_file label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.advertisement .categories .inp_file p {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+.advertisement .characteristics {
+  max-width: 480px;
+}
+.advertisement .characteristics .title {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+.advertisement .characteristics h3 {
+  margin-bottom: 56px;
+}
+.advertisement .characteristics h4 {
+  margin-bottom: 32px;
+}
+.advertisement .characteristics p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+.advertisement .characteristics textarea {
+  width: 100%;
+  height: 108px;
+  resize: none;
+  background: #F8F8F8;
+  padding: 17px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 39px;
+}
+.advertisement .form_inp {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media screen and (max-width: 992px) {
+  .advertisement .form_inp {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+.advertisement .form_inp label {
+  flex-shrink: 0;
+  font-size: 14px;
+}
+.advertisement .form_inp input {
+  width: 100%;
+  background: #F8F8F8;
+  width: 100%;
+  height: 28px;
+  padding: 0 12px;
+  font-family: "Montserrat", sans-serif;
+}
+.advertisement .contact {
+  max-width: 480px;
+  padding-top: 59px;
+}
+.advertisement .contact h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 44px;
+}
+.advertisement .contact ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  margin: 39px 0 24px;
+}
+.advertisement .contact li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  position: relative;
+}
+.advertisement .contact li input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.advertisement .contact li .icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+}
+.advertisement .contact li .icon svg {
+  display: none;
+}
+.advertisement .contact li input:checked ~ .icon svg {
+  display: block;
+}
+.advertisement .contact li p {
+  font-size: 13px;
+  font-weight: 500;
+}
+.advertisement .contact button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #515151;
+  color: white;
+  width: 309px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 576px) {
+  .advertisement .contact button {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

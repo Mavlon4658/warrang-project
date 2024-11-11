@@ -1374,3 +1374,291 @@ body {
     }
 }
 // Products end
+
+// Advertisement
+.advertisement {
+    padding-bottom: 151px;
+    font-family: $font-montserrat;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 77px;
+
+        @include media(992) {
+            font-size: 28px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .name {
+        max-width: 463px;
+        margin-bottom: 90px;
+
+        @include media(992) {
+            margin-bottom: 50px;
+        }
+
+        label {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+
+        input {
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 27%);
+            padding: 9px 19px 10px;
+            border-radius: 25px;
+            font-size: 12px;
+        }
+    }
+
+    .categories {
+        display: flex;
+        align-items: flex-start;
+        gap: 70px;
+        font-family: $font-open-sans;
+        margin-bottom: 58px;
+
+        @include media(992) {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &_item {
+            width: 225px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+
+        ul {
+            font-size: 16px;
+            font-weight: 400;
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+
+        .checkboxes {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 9px;
+                position: relative;
+                font-size: 16px;
+            }
+
+            .icon {
+                width: 13px;
+                height: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgba(0, 0, 0, 0.55);
+                
+                svg {
+                    display: none;
+                }
+            }
+
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                opacity: 0;
+            }
+
+            input:checked ~ span svg {
+                display: block;
+            }
+        }
+
+        .inp_file {
+            width: 90px;
+
+            label {
+                position: relative;
+                width: 90px;
+                height: 74px;
+                margin-bottom: 13px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                input {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    opacity: 0;
+                }
+            }
+
+            p {
+                width: 100%;
+                display: block;
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .characteristics {
+        max-width: 480px;
+
+        .title {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-weight: 600;
+        }
+        
+        h3 {
+            margin-bottom: 56px;
+        }
+
+        h4 {
+            margin-bottom: 32px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 13px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 108px;
+            resize: none;
+            background: #F8F8F8;
+            padding: 17px 12px;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $font-montserrat;
+            margin-bottom: 39px;
+        }
+    }
+
+    .form_inp {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        @include media(992) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+
+        label {
+            flex-shrink: 0;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            background: #F8F8F8;
+            width: 100%;
+            height: 28px;
+            padding: 0 12px;
+            font-family: $font-montserrat;
+        }
+    }
+
+    .contact {
+        max-width: 480px;
+        padding-top: 59px;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 44px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 13px;
+            margin: 39px 0 24px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            position: relative;
+
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                opacity: 0;
+            }
+
+            .icon {
+                width: 13px;
+                height: 13px;
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgba(0, 0, 0, 0.55);
+
+                svg {
+                    display: none;
+                }
+            }
+
+            input:checked ~ .icon svg {
+                display: block;
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #515151;
+            color: white;
+            width: 309px;
+            height: 32px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: $font-montserrat;
+
+            @include media(576) {
+                width: 100%;
+            }
+        }
+    }
+}
+// Advertisement end
