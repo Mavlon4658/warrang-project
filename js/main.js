@@ -1,3 +1,11 @@
+const bodyHidden = () => {
+    document.querySelector('body').style.overflow = 'hidden';
+}
+
+const bodyVisible = () => {
+    document.querySelector('body').style.overflow = 'visible';
+}
+
 let homeCards = document.querySelectorAll('.home__card');
 
 if (homeCards.length) {
@@ -23,4 +31,23 @@ if (homeCards.length) {
             }
         })
     })
+}
+
+let modal = document.querySelector('.modal'),
+    modalClose = document.querySelector('.modal__close'),
+    modalOpen = document.querySelectorAll('.modal__open');
+
+if (modalOpen.length) {
+    modalOpen.forEach(el => {
+        el.onclick = e => {
+            e.preventDefault();
+            modal.classList.add('active');
+            bodyHidden();
+        }
+    })
+
+    modalClose.onclick = () => {
+        modal.classList.remove('active');
+        bodyVisible();
+    }
 }
