@@ -982,7 +982,7 @@ body {
 }
 .my-ads__card {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 44px;
   font-family: "Open Sans", sans-serif;
   max-width: 1048px;
@@ -1105,13 +1105,11 @@ body {
   display: block;
 }
 .my-ads__card_right {
-  padding-top: 60px;
   width: 100%;
-}
-@media screen and (max-width: 992px) {
-  .my-ads__card_right {
-    padding-top: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 .my-ads__card_right h3 {
   font-size: 16px;
@@ -1120,12 +1118,6 @@ body {
 }
 .my-ads__card_right ul {
   font-size: 16px;
-  margin-bottom: 50px;
-}
-@media screen and (max-width: 992px) {
-  .my-ads__card_right ul {
-    margin-bottom: 30px;
-  }
 }
 .my-ads__card_right .bottom_text {
   display: flex;
@@ -1179,4 +1171,156 @@ body {
   .my-ads .links a {
     font-size: 16px;
   }
+}
+
+.products {
+  padding-bottom: 230px;
+}
+@media screen and (max-width: 992px) {
+  .products {
+    padding-bottom: 70px;
+  }
+}
+.products_home {
+  margin-bottom: 50px;
+}
+.products_home .home__search {
+  margin-bottom: 0;
+}
+.products__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+@media screen and (max-width: 700px) {
+  .products__container {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .products__container {
+    flex-direction: column;
+  }
+}
+.products__filter {
+  width: 268px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+@media screen and (max-width: 700px) {
+  .products__filter {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .products__filter {
+    width: 100%;
+    gap: 20px;
+  }
+}
+.products__filter .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.products__filter .weapons a {
+  font-size: 16px;
+  font-weight: 400;
+}
+.products__filter .manufacturer .title {
+  margin-bottom: 18px;
+}
+.products__filter .manufacturer ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.products__filter .manufacturer ul a {
+  font-size: 16px;
+  font-weight: 400;
+}
+.products__filter .price .title {
+  margin-bottom: 18px;
+}
+.products__filter .price .inp {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.products__filter .price .inp label {
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.products__filter .price .inp input {
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  width: 100%;
+  height: 21px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+.products__filter .anons {
+  position: relative;
+  height: 387px;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 56px 19px 29px;
+  text-align: center;
+}
+.products__filter .anons img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.products__filter .anons p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.products__cards {
+  width: calc(100% - 308px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (max-width: 700px) {
+  .products__cards {
+    width: calc(100% - 220px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .products__cards {
+    width: 100%;
+  }
+}
+.products__cards .my-ads__card {
+  max-width: 100%;
+  margin: 0;
+}
+@media screen and (max-width: 992px) {
+  .products__cards .my-ads__card {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 576px) {
+  .products__cards .my-ads__card {
+    align-items: center;
+  }
+}
+.products .more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 42px;
+}
+.products .more-btn button, .products .more-btn a {
+  font-size: 24px;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

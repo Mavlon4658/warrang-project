@@ -989,7 +989,7 @@ body {
 
     &__card {
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 44px;
         font-family: $font-open-sans;
         max-width: 1048px;
@@ -1127,11 +1127,13 @@ body {
         }
 
         &_right {
-            padding-top: 60px;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
 
             @include media(992) {
-                padding-top: 0;
             }
 
             h3 {
@@ -1142,11 +1144,6 @@ body {
 
             ul {
                 font-size: 16px;
-                margin-bottom: 50px;
-
-                @include media(992) {
-                    margin-bottom: 30px;
-                }
             }
 
             .bottom_text {
@@ -1209,3 +1206,171 @@ body {
     }
 }
 // My ads end
+
+// Products
+.products {
+    padding-bottom: 230px;
+
+    @include media(992) {
+        padding-bottom: 70px;
+    }
+    &_home {
+        margin-bottom: 50px;
+
+        .home__search {
+            margin-bottom: 0;
+        }
+    }
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+
+        @include media(700) {
+            gap: 20px;
+        }
+
+        @include media(576) {
+            flex-direction: column;
+        }
+    }
+
+    &__filter {
+        width: 268px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+
+        @include media(700) {
+            width: 200px;
+        }
+        
+        @include media(576) {
+            width: 100%;
+            gap: 20px;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .weapons {
+            a {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .manufacturer {
+            .title {
+                margin-bottom: 18px;
+            }
+
+            ul {
+                list-style-type: disc;
+                list-style-position: inside;
+
+                a {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .price {
+            .title {
+                margin-bottom: 18px;
+            }
+
+            .inp {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+
+                label {
+                    flex-shrink: 0;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                input {
+                    border: 1px solid rgba(0, 0, 0, 37%);
+                    width: 100%;
+                    height: 21px;
+                    padding: 0 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .anons {
+            position: relative;
+            height: 387px;
+            z-index: -1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 56px 19px 29px;
+            text-align: center;
+
+            img {
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+            }
+        }
+    }
+
+    &__cards {
+        width: calc(100% - 308px);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include media(700) {
+            width: calc(100% - 220px);
+        }
+
+        @include media(576) {
+            width: 100%;
+        }
+
+        .my-ads__card {
+            max-width: 100%;
+            margin: 0;
+
+            @include media(992) {
+                align-items: flex-start;
+            }
+
+            @include media(576) {
+                align-items: center;
+            }
+        }
+    }
+
+    .more-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 42px;
+
+        button, a {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+// Products end
